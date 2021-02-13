@@ -1,4 +1,4 @@
-# restro-project
+# restro2
 
 ## Project setup
 ```

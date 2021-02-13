@@ -1,7 +1,7 @@
 <template>
-<div class="navbar-container">
-    <div class="logo-container">
-        <LogoIcon />
+<div class="navbar-container text-3 h-28 flex items-center">
+    <div class="logo-container flex ">
+        <img src="../assets/assets/shared/desktop/logo.svg">
     </div>
     <div class="nav-items">
         <span>HOME</span>
@@ -12,19 +12,14 @@
 </template>
 
 <script>
-import LogoIcon from '../assets/assets/shared/desktop/logo.svg'
+
   export default {
     components: {
-        LogoIcon
+
     }
   }
 </script>
 <style>
-.navbar-container{
-    font-size:0.75rem;
-    height:113px;
-    display:flex;
-}
 
 .logo-container{
     flex:1;
