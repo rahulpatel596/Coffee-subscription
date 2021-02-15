@@ -1,37 +1,20 @@
 <template>
-    <div id="app" class="bg-cream">
-    <Navbar class="w-90vw -ml-10vw" />
-   <ContentHeader />
-   <Collection/>
-   <Reason />
-   <HowItWorks />
-   <Footer />
-  </div>
+  <div id="nav"></div>
+  <Navbar class="w-90vw -ml-5vw" />
+  <router-view />
 </template>
 
 <script>
-import Navbar from '../src/components/Navbar.vue'
-import ContentHeader from './components/ContentHeader.vue'
-import Collection from './components/Collection.vue'
-import Reason from './components/Reason.vue'
-import HowItWorks from './components/HowItWorks'
-import Footer from './components/Footer.vue'
+import Navbar from "./components/Navbar.vue";
 
 export default {
-  name: 'App',
   components: {
     Navbar,
-    ContentHeader,
-    Collection,
-    Reason,
-    HowItWorks,
-    Footer
-  }
-}
+  },
+};
 </script>
-
 <style>
-#app{
-font-family: 'Fraunces', serif;
+#app {
+  font-family: Fraunces;
 }
 </style>
