@@ -7,7 +7,7 @@
         <span class="font-Fraunces font-black text-4xl pb-3 leading-13"
           >Uncompromising quality</span
         >
-        <span class="font-Barlow pt-2 font-lightGray leading-relaxed opacity-80"
+        <span class="font-Barlow pt-2 text-greyish leading-relaxed opacity-80"
           >Although we work with growers who pay close attention to all stages
           of harvest and processing, we employ, on our end, a rigorous quality
           control program to avoid over-roasting or baking the coffee dry. Every

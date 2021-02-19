@@ -12,7 +12,7 @@
             >Why choose us?</span
           >
           <span
-            class="font-Barlow text-lightGray opacity-80 leading-7 text-base text-center"
+            class="font-Barlow text-greyish opacity-80 leading-7 text-base text-center"
           >
             A large part of our role is choosing which particular coffees will
             be featured in our range. This means working closely with the best

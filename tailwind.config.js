@@ -5,8 +5,11 @@ module.exports = {
     extend: {
       lineHeight: {
         "12": "4rem",
+        "15": "4.5rem",
         "13": "3rem",
+        "16": "2.25rem",
       },
+
       fontSize: {
         "10xl": "9.375rem",
         "4": "2rem",
@@ -34,6 +37,7 @@ module.exports = {
 
       textColor: {
         lightGray: "#FEFCF7",
+        greyish: "#83888F",
         darkCream: "#FDD6BA",
       },
       backgroundColor: {

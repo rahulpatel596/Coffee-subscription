@@ -10,7 +10,7 @@
       <span class="font-Fraunces font-black text-4xl pb-3 leading-13"
         >Our commitment</span
       >
-      <span class="font-Barlow font-lightGray leading-relaxed opacity-80"
+      <span class="font-Barlow text-greyish leading-relaxed opacity-80"
         >We’re built on a simple mission and a commitment to doing good along
         the way. We want to make it easy for you to discover and brew the
         world’s best coffee at home. It all starts at the source. To locate the

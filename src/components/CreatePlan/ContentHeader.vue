@@ -7,10 +7,11 @@
         class="absolute  flex flex-col hero-content justify-center justify-between"
       >
         <span
-          class="font-Fraunces leading-13 text-white font-black text-5xl pb-6"
-          >About Us</span
+          class="font-Fraunces pb-6 leading-13 text-white font-black text-5xl"
+          >Create plan</span
         >
-        <span class="font-Barlow text-white text-base leading-9"
+        <span
+          class="font-Barlow text-greyish text-base leading-9 text-lightGray"
           >Coffeeroasters began its journey of exotic discovery in 1999,
           highlighting stories of coffee from around the world. We have since
           been dedicated to bring the perfect cup - from bean to brew - in every
@@ -20,7 +21,7 @@
 
       <img
         class="rounded-xl w-90vw"
-        src="../../assets/assets/about/desktop/image-hero-whitecup.jpg"
+        src="../../assets/assets/plan/desktop/image-hero-blackcup.jpg"
       />
     </div>
   </div>

@@ -1,16 +1,20 @@
 <template>
-  <div>
-    <span>Our headquarters</span>
-    <Location
-      v-for="(index, location) in locations"
-      v-bind:key="index"
-      v-bind:locationImage="location.locationImage"
-      v-bind:name="location.locationName"
-      v-bind:street="location.street"
-      v-bind:city="location.city"
-      v-bind:state="location.state"
-      v-bind:contact="location.contact"
-    />
+  <div class="w-80vw h-80vh -ml-10vw flex flex-col pt-30 justify-evenly">
+    <span class="font-black leading-8 text-2xl -ml-5vw text-greyish"
+      >Our headquarters</span
+    >
+    <div class="flex justify-around">
+      <Location
+        v-for="(location, index) in locations"
+        v-bind:key="index"
+        v-bind:locationImage="location.locationImage"
+        v-bind:name="location.locationName"
+        v-bind:street="location.street"
+        v-bind:city="location.city"
+        v-bind:state="location.state"
+        v-bind:contact="location.contact"
+      />
+    </div>
   </div>
 </template>
 

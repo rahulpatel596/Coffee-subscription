@@ -5,7 +5,7 @@
         ><img src="../assets/assets/shared/desktop/logo.svg"
       /></router-link>
     </div>
-    <div class="nav-items justify-end justify-around">
+    <div class="nav-items font-Barlow justify-end justify-around">
       <router-link to="/">HOME</router-link>
       <router-link to="/about">ABOUT</router-link>
       <router-link to="/createYourPlan">CREATE YOUR PLAN</router-link>

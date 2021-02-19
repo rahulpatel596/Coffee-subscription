@@ -4,6 +4,7 @@
     <OurCommitment />
     <Quality />
     <OurHeadquarters />
+    <Footer />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import ContentHeader from "../components/About/ContentHeader";
 import OurCommitment from "../components/About/OurCommitment";
 import Quality from "../components/About/Quality.vue";
 import OurHeadquarters from "../components/About/OurHeadquarters.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   components: {
@@ -19,6 +21,7 @@ export default {
     OurCommitment,
     Quality,
     OurHeadquarters,
+    Footer,
   },
 };
 </script>
