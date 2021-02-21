@@ -63,9 +63,4 @@ export default {
 .stepCard {
   height: 355px;
 }
-button.bg-sweetGreen {
-  width: 217px;
-  height: 56px;
-  margin-left: 2rem;
-}
 </style>

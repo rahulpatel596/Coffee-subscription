@@ -12,10 +12,12 @@ module.exports = {
 
       fontSize: {
         "10xl": "9.375rem",
+
         "4": "2rem",
       },
       height: {
         "22-9": "22.937rem",
+        "15-6": "16rem",
         "90vh": "90vh",
         "80vh": "80vh",
       },
@@ -38,9 +40,11 @@ module.exports = {
       textColor: {
         lightGray: "#FEFCF7",
         greyish: "#83888F",
+        sweetGreen: "#0E8784",
         darkCream: "#FDD6BA",
       },
       backgroundColor: {
+        dull: "#F4F1EB",
         blueish: "#66D2CF",
         darkGreenish: "#2C343E",
         sweetGreen: "#0E8784",

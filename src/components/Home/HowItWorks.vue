@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <button class="rounded-md text-white bg-sweetGreen">
+      <button class="cr-button rounded-md text-white bg-sweetGreen">
         Create your plan
       </button>
     </div>
@@ -66,7 +66,7 @@ export default {
 .stepCard-box {
   height: 400px;
 }
-button.bg-sweetGreen {
+.cr-button {
   width: 217px;
   height: 56px;
   margin-left: 2rem;

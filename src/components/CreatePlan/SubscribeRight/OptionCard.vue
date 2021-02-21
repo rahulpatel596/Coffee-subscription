@@ -1,0 +1,31 @@
+<template>
+  <div class="flex w-4/5 h-15-6 pt-5 pb-5">
+    <div
+      class="h-full flex justify-between"
+      v-bind:key="index"
+      v-for="(option, index) in options"
+    >
+      <button
+        class=" rounded-lg w-11/12 flex flex-col justify-evenly"
+        v-bind:class="[option.isSelected ? 'bg-sweetGreen' : 'bg-dull']"
+      >
+        <span
+          class="text-2xl font-black text-left pl-6"
+          v-bind:class="[option.isSelected ? 'text-white' : 'text-black']"
+          >{{ option.optionName }}</span
+        >
+        <span
+          class="text-left pl-6"
+          v-bind:class="[option.isSelected ? 'text-white' : 'text-black']"
+          >{{ option.optionDesc }}</span
+        >
+      </button>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  props: ["options"],
+};
+</script>
+<style></style>
