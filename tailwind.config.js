@@ -45,6 +45,7 @@ module.exports = {
       },
       backgroundColor: {
         dull: "#F4F1EB",
+        skin: "#FDD6BA",
         blueish: "#66D2CF",
         darkGreenish: "#2C343E",
         sweetGreen: "#0E8784",

@@ -6,7 +6,8 @@
       v-for="(option, index) in options"
     >
       <button
-        class=" rounded-lg w-11/12 flex flex-col justify-evenly"
+        v-on:click="setIsSelected(index, ind)"
+        class="rounded-lg w-11/12 flex flex-col justify-evenly hover:bg-skin hover:text-black"
         v-bind:class="[option.isSelected ? 'bg-sweetGreen' : 'bg-dull']"
       >
         <span
@@ -25,7 +26,16 @@
 </template>
 <script>
 export default {
-  props: ["options"],
+  props: ["options", "ind"],
+  methods: {
+    setIsSelected(optionIndex, menuIndex) {
+      this.$store.commit({
+        type: "setIsSelected",
+        optionIndex: optionIndex,
+        menuIndex: menuIndex,
+      });
+    },
+  },
 };
 </script>
 <style></style>

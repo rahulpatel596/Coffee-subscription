@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="">
-      <button v-on:click="setIsActive(ind)" class="">
+      <button v-on:click="setIsActive(ind)" class="pb-10">
         <span class="text-4xl text-greyish font-black">{{ title }}</span>
       </button>
       <div class="">
-        <OptionCard v-if="isActive" :options="options" />
+        <OptionCard v-if="isActive" :options="options" :ind="ind" />
       </div>
     </div>
   </div>

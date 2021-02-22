@@ -9,6 +9,7 @@
 <script>
 import SubscribeLeftMenu from "./SubscribeLeftMenu";
 import SubscribeRightMenu from "./SubscribeRight/SubscribeRightMenu";
+
 export default {
   components: {
     SubscribeLeftMenu,

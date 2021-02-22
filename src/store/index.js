@@ -40,13 +40,13 @@ export const store = createStore({
             {
               optionName: "Filter",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "For pour over or drip methods like Aeropress, Chemex, and V60",
               isSelected: false,
             },
             {
               optionName: "Expresso",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "Dense and finely ground beans for an intense, flavorful experience",
               isSelected: false,
             },
           ],
@@ -58,19 +58,19 @@ export const store = createStore({
             {
               optionName: "Single Origin",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "Distinct, high quality coffee from a specific family-owned farm",
               isSelected: false,
             },
             {
               optionName: "Decaf",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "Just like regular coffee, except the caffeine has been removed",
               isSelected: false,
             },
             {
               optionName: "Blended",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "Combination of two or three dark roasted beans of organic coffees",
               isSelected: false,
             },
           ],
@@ -80,21 +80,21 @@ export const store = createStore({
           isActive: false,
           options: [
             {
-              optionName: "Single Origin",
+              optionName: "250g",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "Perfect for the solo drinker. Yields about 12 delicious cups.",
               isSelected: false,
             },
             {
-              optionName: "Decaf",
+              optionName: "500g",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "Perfect option for a couple. Yields about 40 delectable cups.",
               isSelected: false,
             },
             {
-              optionName: "Blended",
+              optionName: "1000g",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "Perfect for offices and events. Yields about 90 delightful cups.",
               isSelected: false,
             },
           ],
@@ -104,21 +104,21 @@ export const store = createStore({
           isActive: false,
           options: [
             {
-              optionName: "Single Origin",
+              optionName: "Wholebean",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "Best choice if you cherish the full sensory experience",
               isSelected: false,
             },
             {
-              optionName: "Decaf",
+              optionName: "Filter",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "For drip or pour-over coffee methods such as V60 or Aeropress",
               isSelected: false,
             },
             {
-              optionName: "Blended",
+              optionName: "Cafetiére",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "Course ground beans specially suited for french press coffee",
               isSelected: false,
             },
           ],
@@ -130,19 +130,19 @@ export const store = createStore({
             {
               optionName: "Every week",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "$7.20 per shipment. Includes free first-class shipping.",
               isSelected: false,
             },
             {
               optionName: "Every 2 weeks",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "$9.60 per shipment. Includes free priority shipping.",
               isSelected: false,
             },
             {
               optionName: "Every month",
               optionDesc:
-                "Compatible with Nespresso systems and similar brewers",
+                "$12.00 per shipment. Includes free priority shipping.",
               isSelected: false,
             },
           ],
@@ -158,12 +158,56 @@ export const store = createStore({
       state.menuRight[payload.index].isActive = !state.menuRight[payload.index]
         .isActive;
     },
+    setIsSelected(state, payload) {
+      state.menuRight[payload.menuIndex].options.forEach(function(opt, index) {
+        if (index != payload.optionIndex) {
+          opt.isSelected = false;
+        }
+        state.menuRight[payload.menuIndex].options[
+          payload.optionIndex
+        ].isSelected = true;
+      });
+    },
   },
   actions: {},
   modules: {},
   getters: {
     getMenuLeft: (state) => state.menuLeft,
     getMenuRight: (state) => state.menuRight,
-    getCurrentIndex: (state) => state.currentMenuIndex,
+    getCoffeePreference: (state) =>
+      state.menuRight[0].options.filter((opt) => {
+        if (opt.isSelected) {
+          console.log(opt.optionName);
+          return opt.optionName;
+        }
+      }),
+    getCoffeeBeanType: (state) => {
+      state.menuRight[1].options.filter((opt) => {
+        if (opt.isSelected) {
+          return opt.optionName;
+        }
+      });
+    },
+    getCoffeeQuantity: (state) => {
+      state.menuRight[2].options.filter((opt) => {
+        if (opt.isSelected) {
+          return opt.optionName;
+        }
+      });
+    },
+    getCoffeeGrindOption: (state) => {
+      state.menuRight[3].options.filter((opt) => {
+        if (opt.isSelected) {
+          return opt.optionName;
+        }
+      });
+    },
+    getCoffeeDeliveries: (state) => {
+      state.menuRight[4].options.filter((opt) => {
+        if (opt.isSelected) {
+          return opt.optionName;
+        }
+      });
+    },
   },
 });

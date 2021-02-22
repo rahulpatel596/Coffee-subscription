@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-90vw h-48 -ml-5vw">
+  <footer class="mt-12 w-90vw h-48 -ml-5vw">
     <div class="w-full h-3/5 bg-darkGreenish flex items-center justify-between">
       <div class=" justify-center items-center pl-24">
         <img src="../assets/assets/shared/desktop/logo.svg" />
@@ -16,7 +16,7 @@
         <img src="../assets/assets/shared/desktop/icon-instagram.svg" />
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -27,10 +27,7 @@ export default {
 </script>
 
 <style>
-.footer-menu {
-  width: 330px;
-}
-.footer-social {
-  width: 150px;
+footer {
+  width: 100%;
 }
 </style>
