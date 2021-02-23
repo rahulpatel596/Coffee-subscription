@@ -1,8 +1,12 @@
 <template>
-  <div class="v-screen h-screen flex items-center justify-center">
-    <div class="relative w-90vw h-90vh flex justify-center align-text-top">
+  <div
+    class="hidden  md:w-screen md:h-screen md:flex md:items-center md:justify-center "
+  >
+    <div
+      class="relative md:w-90vw md:h-90vh flex justify-center align-text-top"
+    >
       <div
-        class="rounded-lg bg-darkGreenish font-white h-4/5 w-full flex p-28 justify-center"
+        class="rounded-lg bg-darkGreenish font-white md:h-4/5 md:w-full flex md:p-28 justify-center"
       >
         <div
           class="text-box flex flex-col justify-between align-top justify-center flex-center"
@@ -12,7 +16,7 @@
             >Why choose us?</span
           >
           <span
-            class="font-Barlow text-greyish opacity-80 leading-7 text-base text-center"
+            class="font-Barlow text-greyish opacity-80 md:leading-7 text-base text-center"
           >
             A large part of our role is choosing which particular coffees will
             be featured in our range. This means working closely with the best
@@ -22,7 +26,7 @@
         </div>
       </div>
       <div
-        class="w-4/5 flex justify-between justify-center card-box bottom-0 absolute"
+        class="md:w-4/5 flex flex-col md:flex-row md:justify-between md:absolute justify-center card-box bottom-0 "
       >
         <Card
           class="text-white rounded-md myCard bg-sweetGreen"
@@ -63,16 +67,18 @@ export default {
 </script>
 
 <style>
-.text-box {
-  width: 540px;
-  height: 160px;
-  font-size: 40px;
-}
-.card-box {
-  height: 382px;
-}
-.myCard {
-  width: 30%;
-  height: 382px;
+@media (min-width: 768px) {
+  .text-box {
+    width: 540px;
+    height: 160px;
+    font-size: 40px;
+  }
+  .card-box {
+    height: 382px;
+  }
+  .myCard {
+    width: 30%;
+    height: 382px;
+  }
 }
 </style>

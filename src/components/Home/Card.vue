@@ -6,8 +6,8 @@
     <div
       class=" textBox justify-around text-center flex flex-col items-center justify-between justify-center"
     >
-      <span class="p-4 text-2xl">Best quality</span>
-      <span class="font-Barlow flex-1 text-base  opacity-80"
+      <span class="md:p-4 md:text-2xl">Best quality</span>
+      <span class="font-Barlow md:flex-1 text-base  opacity-80"
         >Discover an endless variety of the world’s best artisan coffee from
         each of our roasters.</span
       >

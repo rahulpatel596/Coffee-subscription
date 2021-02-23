@@ -1,10 +1,12 @@
 <template>
-  <div class="w-screen h-screen ">
-    <div class="flex h-4/5 flex-col justify-center items-center">
-      <div class="font-black relative text-10xl my-collection">
+  <div class="w-screen h-screen mt-28 md:mt-0">
+    <div class="flex  md:h-4/5 flex-col justify-center items-center">
+      <div class="font-black relative text-4xl md:text-10xl my-collection">
         <span class="">our collections</span>
       </div>
-      <div class="flex z-50 justify-center items-center w-4/5">
+      <div
+        class="flex flex-col md:flex-row z-50 justify-center items-center md:w-4/5"
+      >
         <Product
           v-for="(product, index) in products"
           v-bind:key="index"
@@ -62,23 +64,29 @@ export default {
 </script>
 
 <style>
-.my-collection {
-  top: 80px;
-}
-.my-collection span {
-  height: 72px;
-  left: 1.71%;
-  right: 1.8%;
-  top: calc(50% - 72px / 2 + 24px);
-  font-family: Fraunces 9pt;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 150px;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  line-height: 72px;
-  /* identical to box height, or 48% */
-  text-align: center;
-  color: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #fefcf7 100%);
+@media (min-width: 768px) {
+  .my-collection {
+    top: 80px;
+  }
+  .my-collection span {
+    height: 72px;
+    left: 1.71%;
+    right: 1.8%;
+    top: calc(50% - 72px / 2 + 24px);
+    font-family: Fraunces 9pt;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 150px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    line-height: 72px;
+    /* identical to box height, or 48% */
+    text-align: center;
+    color: linear-gradient(
+      180deg,
+      rgba(254, 252, 247, 0.0001) 0%,
+      #fefcf7 100%
+    );
+  }
 }
 </style>

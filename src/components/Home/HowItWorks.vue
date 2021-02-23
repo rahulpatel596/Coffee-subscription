@@ -1,9 +1,9 @@
 <template>
   <div class="h-screen flex justify-center items-center w-screen">
-    <div class="w-4/5 flex flex-col h-4/5 justify-between">
-      <span class="text-2xl pl-14 font-black">How it works</span>
+    <div class="md:w-4/5 flex flex-col md:h-4/5 justify-between">
+      <span class="md:text-2xl md:pl-14 font-black">How it works</span>
       <img
-        class="pathIcon pl-14"
+        class="pathIcon md:pl-14"
         src="../../assets/assets/home/desktop/svgpath.svg"
       />
       <div class="items-left">
@@ -60,15 +60,17 @@ export default {
 </script>
 
 <style>
-.pathIcon {
-  width: 791px;
-}
-.stepCard-box {
-  height: 400px;
-}
-.cr-button {
-  width: 217px;
-  height: 56px;
-  margin-left: 2rem;
+@media (min-width: 768px) {
+  .pathIcon {
+    width: 791px;
+  }
+  .stepCard-box {
+    height: 400px;
+  }
+  .cr-button {
+    width: 217px;
+    height: 56px;
+    margin-left: 2rem;
+  }
 }
 </style>
