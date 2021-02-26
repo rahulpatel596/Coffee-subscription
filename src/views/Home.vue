@@ -1,10 +1,10 @@
 <template>
-  <div class="home">
+  <div class="home overflow-x-hidden">
     <ContentHeader />
     <Collection />
     <Reason />
     <HowItWorks />
-    <Footer />
+    <Footer class="mt-10" />
   </div>
 </template>
 

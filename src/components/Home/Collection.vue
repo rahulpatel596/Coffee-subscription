@@ -1,11 +1,11 @@
 <template>
-  <div class="w-screen h-screen mt-28 md:mt-0">
+  <div class="w-screen md:h-screen mt-28 md:mt-0">
     <div class="flex  md:h-4/5 flex-col justify-center items-center">
       <div class="font-black relative text-4xl md:text-10xl my-collection">
         <span class="">our collections</span>
       </div>
       <div
-        class="flex flex-col md:flex-row z-50 justify-center items-center md:w-4/5"
+        class="flex flex-col block md:flex-row z-50 justify-center items-center md:w-4/5"
       >
         <Product
           v-for="(product, index) in products"

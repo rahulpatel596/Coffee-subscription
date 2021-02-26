@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about overflow-x-hidden">
     <ContentHeader />
     <OurCommitment />
     <Quality />

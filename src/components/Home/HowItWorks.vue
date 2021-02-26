@@ -1,13 +1,15 @@
 <template>
-  <div class="h-screen flex justify-center items-center w-screen">
-    <div class="md:w-4/5 flex flex-col md:h-4/5 justify-between">
+  <div
+    class="w-4/5 ml-12 mt-40 md:h-screen md:flex md:justify-center md:items-center md:w-screen"
+  >
+    <div class="md:w-4/5 flex flex-col md:h-4/5 md:justify-between">
       <span class="md:text-2xl md:pl-14 font-black">How it works</span>
       <img
         class="pathIcon md:pl-14"
         src="../../assets/assets/home/desktop/svgpath.svg"
       />
       <div class="items-left">
-        <div class="stepCard-box flex justify-around">
+        <div class="stepCard-box flex justify-between">
           <StepCard
             v-bind:stepDescription="stepDescription1"
             v-bind:stepNumber="stepNumber1"
@@ -26,7 +28,9 @@
         </div>
       </div>
 
-      <button class="cr-button rounded-md text-white bg-sweetGreen">
+      <button
+        class="md:cr-button rounded-md text-white bg-sweetGreen h-16 bg-blueish w-72 mt-10"
+      >
         Create your plan
       </button>
     </div>

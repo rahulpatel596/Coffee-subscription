@@ -1,7 +1,7 @@
 <template>
   <footer class="md:mt-12 md:w-90vw md:h-48 md:-ml-5vw">
     <div
-      class="md:w-full md:h-3/5 bg-darkGreenish flex items-center justify-between"
+      class="md:w-full md:h-3/5 bg-darkGreenish flex md:flex-row lg:flex-row xl:flex-row flex-col items-center justify-between"
     >
       <div class=" justify-center items-center md:pl-24">
         <img src="../assets/assets/shared/desktop/logo.svg" />

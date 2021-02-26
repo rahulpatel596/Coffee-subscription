@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hidden  md:w-screen md:h-screen md:flex md:items-center md:justify-center "
+    class=" hidden md:w-screen md:h-screen md:flex md:items-center md:justify-center "
   >
     <div
       class="relative md:w-90vw md:h-90vh flex justify-center align-text-top"
@@ -41,6 +41,38 @@
           v-bind:myIcon="truckIcon"
         />
       </div>
+    </div>
+  </div>
+  <div class="h-60vh block mt-32 md:hidden lg:hidden xl:hidden w-90vw -ml-5vw">
+    <div
+      class="rounded-lg bg-darkGreenish font-white h-4/5 flex flex-col pt-10"
+    >
+      <div class="flex flex-col  items-center w-70vw -ml-10vw -mt-5vh">
+        <span class="font-Fraunces text-2xl text-white text-center font-black"
+          >Why choose us?</span
+        >
+        <span
+          class="font-Barlow text-greyish pt-6 opacity-80 md:leading-7 text-base text-center"
+        >
+          A large part of our role is choosing which particular coffees will be
+          featured in our range. This means working closely with the best coffee
+          growers to give you a more impactful experience on every level.
+        </span>
+      </div>
+    </div>
+    <div class="flex flex-col justify-between -mt-60 w-80vw -ml-5vw">
+      <Card
+        class="text-white rounded-md mb-6 myCard bg-sweetGreen"
+        v-bind:myIcon="beanIcon"
+      />
+      <Card
+        class="text-white rounded-md mb-6 myCard bg-sweetGreen"
+        v-bind:myIcon="giftIcon"
+      />
+      <Card
+        class="text-white rounded-md myCard bg-sweetGreen"
+        v-bind:myIcon="truckIcon"
+      />
     </div>
   </div>
 </template>
