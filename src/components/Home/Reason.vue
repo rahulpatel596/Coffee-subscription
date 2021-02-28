@@ -1,12 +1,12 @@
 <template>
   <div
-    class=" hidden md:w-screen md:h-screen md:flex md:items-center md:justify-center "
+    class="hidden  md:hidden lg:w-screen lg:h-60vh lg:mt-32 lg:flex lg:items-center lg:justify-center "
   >
     <div
-      class="relative md:w-90vw md:h-90vh flex justify-center align-text-top"
+      class="relative lg:w-90vw lg:h-90vh flex justify-center align-text-top"
     >
       <div
-        class="rounded-lg bg-darkGreenish font-white md:h-4/5 md:w-full flex md:p-28 justify-center"
+        class="rounded-lg bg-darkGreenish font-white lg:h-3/6 lg:w-full flex lg:p-28 justify-center"
       >
         <div
           class="text-box flex flex-col justify-between align-top justify-center flex-center"
@@ -16,7 +16,7 @@
             >Why choose us?</span
           >
           <span
-            class="font-Barlow text-greyish opacity-80 md:leading-7 text-base text-center"
+            class="font-Barlow text-greyish opacity-80 lg:leading-7 text-base text-center"
           >
             A large part of our role is choosing which particular coffees will
             be featured in our range. This means working closely with the best
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div
-        class="md:w-4/5 flex flex-col md:flex-row md:justify-between md:absolute justify-center card-box bottom-0 "
+        class=" flex flex-col md:flex md:flex-row lg:mt-96 lg:flex-row lg:justify-between lg:absolute justify-center card-box "
       >
         <Card
           class="text-white rounded-md myCard bg-sweetGreen"
@@ -43,7 +43,7 @@
       </div>
     </div>
   </div>
-  <div class="h-60vh block mt-32 md:hidden lg:hidden xl:hidden w-90vw -ml-5vw">
+  <div class="h-60vh block mt-32  lg:hidden lg:hidden xl:hidden w-90vw -ml-5vw">
     <div
       class="rounded-lg bg-darkGreenish font-white h-4/5 flex flex-col pt-10"
     >
@@ -52,7 +52,7 @@
           >Why choose us?</span
         >
         <span
-          class="font-Barlow text-greyish pt-6 opacity-80 md:leading-7 text-base text-center"
+          class="font-Barlow text-greyish pt-6 opacity-80 lg:leading-7 text-base text-center"
         >
           A large part of our role is choosing which particular coffees will be
           featured in our range. This means working closely with the best coffee
@@ -60,7 +60,7 @@
         </span>
       </div>
     </div>
-    <div class="flex flex-col justify-between -mt-60 w-80vw -ml-5vw">
+    <div class="flex flex-col justify-between -mt-16 md:-mt-44 w-80vw -ml-5vw">
       <Card
         class="text-white rounded-md mb-6 myCard bg-sweetGreen"
         v-bind:myIcon="beanIcon"
@@ -99,7 +99,7 @@ export default {
 </script>
 
 <style>
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .text-box {
     width: 540px;
     height: 160px;

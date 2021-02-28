@@ -1,9 +1,9 @@
 <template>
-  <footer class="md:mt-12 md:w-90vw md:h-48 md:-ml-5vw">
+  <footer class="lg:mt-12 lg:w-90vw lg:h-48 lg:-ml-5vw">
     <div
-      class="md:w-full md:h-3/5 bg-darkGreenish flex md:flex-row lg:flex-row xl:flex-row flex-col items-center justify-between"
+      class="lg:w-full lg:h-3/5 bg-darkGreenish flex lg:flex-row lg:flex-row xl:flex-row flex-col items-center justify-between"
     >
-      <div class=" justify-center items-center md:pl-24">
+      <div class=" justify-center items-center lg:pl-24">
         <img src="../assets/assets/shared/desktop/logo.svg" />
       </div>
 
@@ -12,7 +12,7 @@
         <span class="font-Barlow">ABOUT US</span>
         <span class="font-Barlow ">CREATE YOUR PLAN</span>
       </div>
-      <div class="footer-social flex justify-between md:pr-8">
+      <div class="footer-social flex justify-between lg:pr-8">
         <img src="../assets/assets/shared/desktop/icon-facebook.svg" />
         <img src="../assets/assets/shared/desktop/icon-twitter.svg" />
         <img src="../assets/assets/shared/desktop/icon-instagram.svg" />

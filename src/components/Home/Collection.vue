@@ -1,11 +1,13 @@
 <template>
-  <div class="w-screen md:h-screen mt-28 md:mt-0">
-    <div class="flex  md:h-4/5 flex-col justify-center items-center">
-      <div class="font-black relative text-4xl md:text-10xl my-collection">
+  <div class="w-screen md:h-60vh md:pt-32 mt-28 lg:mt-0">
+    <div class="flex  lg:h-4/5 flex-col justify-center items-center">
+      <div
+        class="font-black relative text-4xl md:text-2xl lg:text-10xl my-collection"
+      >
         <span class="">our collections</span>
       </div>
       <div
-        class="flex flex-col block md:flex-row z-50 justify-center items-center md:w-4/5"
+        class="flex flex-col block md:flex-row lg:flex-row z-50 justify-center items-center lg:w-4/5"
       >
         <Product
           v-for="(product, index) in products"
@@ -76,7 +78,7 @@ export default {
     font-family: Fraunces 9pt;
     font-style: normal;
     font-weight: 900;
-    font-size: 150px;
+    font-size: 94px;
     mix-blend-mode: normal;
     opacity: 0.5;
     line-height: 72px;

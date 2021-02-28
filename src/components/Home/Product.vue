@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col md:h-96 justify-between items-center pt-12">
+  <div class="flex flex-col lg:h-96 justify-between items-center pt-12">
     <div class="flex items-center justify-center">
-      <img :src="mySrc" class="w-3/5 md:w-full" />
+      <img :src="mySrc" class="w-3/5 lg:w-full" />
     </div>
-    <span class="md:text-2xl text-xl font-black">{{ productName }}</span>
+    <span class="lg:text-2xl text-xl font-black">{{ productName }}</span>
     <span
-      class="w-3/5 md:w-full font-Barlow text-base font-normal flex-wrap text-center"
+      class="w-3/5 lg:w-full font-Barlow text-base font-normal flex-wrap text-center"
       >{{ descriptiveText }}</span
     >
   </div>

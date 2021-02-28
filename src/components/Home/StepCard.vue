@@ -1,12 +1,14 @@
 <template>
-  <div class="md:stepCard-cont flex flex-col align-left">
+  <div
+    class=" lg:stepCard-cont flex flex-col text-center lg:text-left lg:text-left xl:text-left"
+  >
     <span class="text-7xl text-darkCream stepnumber">{{ stepNumber }}</span>
     <span
-      class="leading-2 h-1/3 md:leading-16 lg:leading-16 font-black text-175 md:text-4 lg:text-4 xl:text-4 2xl:text-4"
-      >{{ stepTitle }}</span
+      class="leading-2 h-1/3 lg:h-1/5 lg:flex lg:items-center lg:h-2/6 lg:leading-16 lg:leading-16 font-black text-175 lg:text-4 lg:text-4 xl:text-4 2xl:text-4"
+      ><span>{{ stepTitle }}</span></span
     >
     <span
-      class="text-xs leading-5 h-1/3 pt-4 font-Barlow md:text-base lg:text-base xl:text-base 2xl:text-base"
+      class="text-xs leading-5 h-1/3 pt-4 font-Barlow lg:text-base lg:text-base xl:text-base 2xl:text-base"
       >{{ stepDescription }}</span
     >
   </div>

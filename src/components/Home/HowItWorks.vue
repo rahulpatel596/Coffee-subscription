@@ -1,26 +1,36 @@
 <template>
   <div
-    class="w-4/5 ml-12 mt-40 md:h-screen md:flex md:justify-center md:items-center md:w-screen"
+    class="w-4/5 ml-12 mt-72 lg:mt-0 lg:h-60vh lg:flex lg:justify-center lg:items-center lg:w-screen"
   >
-    <div class="md:w-4/5 flex flex-col md:h-4/5 md:justify-between">
-      <span class="md:text-2xl md:pl-14 font-black">How it works</span>
+    <div
+      class="pb-6 md:flex md:justify-center md:items-center justify-center lg:w-4/5 flex flex-col lg:h-4/5 lg:justify-between"
+    >
+      <span
+        class="pb-6 text-2xl font-black text-center lg:text-left lg:text-left xl:text-left"
+        >How it works</span
+      >
       <img
-        class="pathIcon md:pl-14"
+        class="pathIcon pb-6 hidden lg:block lg:block xl:block"
         src="../../assets/assets/home/desktop/svgpath.svg"
       />
       <div class="items-left">
-        <div class="stepCard-box flex justify-between">
+        <div
+          class="stepCard-box flex flex-col  lg:flex-row lg:flex-row xl:flex-row justify-between"
+        >
           <StepCard
+            class="pb-10 lg:pb-0 lg:pb-0 xl:pb-0"
             v-bind:stepDescription="stepDescription1"
             v-bind:stepNumber="stepNumber1"
             v-bind:stepTitle="stepTitle1"
           />
           <StepCard
+            class="pb-10 lg:pb-0 lg:pb-0 xl:pb-0"
             v-bind:stepDescription="stepDescription2"
             v-bind:stepNumber="stepNumber2"
             v-bind:stepTitle="stepTitle2"
           />
           <StepCard
+            class="pb-10 lg:pb-0 lg:pb-0 xl:pb-0"
             v-bind:stepDescription="stepDescription3"
             v-bind:stepNumber="stepNumber3"
             v-bind:stepTitle="stepTitle3"
@@ -29,7 +39,7 @@
       </div>
 
       <button
-        class="md:cr-button rounded-md text-white bg-sweetGreen h-16 bg-blueish w-72 mt-10"
+        class=" lg:cr-button md:mt-64 md:justify-center rounded-md text-white bg-sweetGreen h-16 bg-blueish ml-4   lg:ml-0 xl:ml-0 w-72 mt-10 lg:-mt-6 lg:-mt-6 xl:-mt-6 2xl:-mt-6"
       >
         Create your plan
       </button>
@@ -74,7 +84,6 @@ export default {
   .cr-button {
     width: 217px;
     height: 56px;
-    margin-left: 2rem;
   }
 }
 </style>
