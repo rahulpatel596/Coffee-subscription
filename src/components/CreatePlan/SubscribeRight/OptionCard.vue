@@ -1,13 +1,15 @@
 <template>
-  <div class="flex w-4/5 h-15-6 pt-5 pb-5">
+  <div
+    class="flex md:flex-row h-full flex-col w-full lg:w-5/6 md:h-15-6 pt-5 pb-5"
+  >
     <div
-      class="h-full flex justify-between"
+      class="h-full w-full flex justify-between"
       v-bind:key="index"
       v-for="(option, index) in options"
     >
       <button
         v-on:click="setIsSelected(index, ind)"
-        class="rounded-lg w-11/12 flex flex-col justify-evenly hover:bg-skin hover:text-black"
+        class="rounded-lg h-full w-11/12 mb-6 flex flex-col md:justify-evenly lg:hover:bg-skin lg:hover:text-black"
         v-bind:class="[option.isSelected ? 'bg-sweetGreen' : 'bg-dull']"
       >
         <span

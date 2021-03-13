@@ -1,10 +1,19 @@
 <template>
   <div>
     <div class="">
-      <button v-on:click="setIsActive(ind)" class="pb-10">
-        <span class="text-4xl text-greyish font-black">{{ title }}</span>
+      <button
+        v-on:click="setIsActive(ind)"
+        class="pb-10 flex w-full justify-between items-center"
+      >
+        <span class="text-2xl md:text-4xl text-greyish font-black">{{
+          title
+        }}</span>
+        <img
+          v-bind:class="{ transform: isActive, 'rotate-180': isActive }"
+          src="../../../assets/assets/plan/desktop/icon-arrow.svg"
+        />
       </button>
-      <div class="">
+      <div class="h-full">
         <OptionCard v-if="isActive" :options="options" :ind="ind" />
       </div>
     </div>

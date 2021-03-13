@@ -1,9 +1,13 @@
 <template>
-  <div class="w-80vw h-80vh -ml-10vw flex flex-col pt-30 justify-evenly">
-    <span class="font-black leading-8 text-2xl -ml-5vw text-greyish"
+  <div
+    class="w-80vw md:w-80vw h-full mt-20 items-center -ml-10vw flex flex-col pt-30 justify-evenly"
+  >
+    <span class="font-black leading-8 text-2xl text-greyish"
       >Our headquarters</span
     >
-    <div class="flex justify-around">
+    <div
+      class="flex justify-around md:justify-around md:w-full flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
+    >
       <Location
         v-for="(location, index) in locations"
         v-bind:key="index"

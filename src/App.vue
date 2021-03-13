@@ -17,4 +17,7 @@ export default {
 #app {
   font-family: Fraunces;
 }
+*:focus {
+  outline: none !important;
+}
 </style>

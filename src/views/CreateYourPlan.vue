@@ -2,7 +2,7 @@
   <div class="overflow-x-hidden">
     <ContentHeader />
     <PlanSteps />
-    <Subscribe class="" />
+    <Subscribe />
     <Footer />
   </div>
 </template>

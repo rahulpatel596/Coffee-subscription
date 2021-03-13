@@ -1,12 +1,12 @@
 <template>
   <div
-    class="hidden  md:hidden lg:w-screen lg:h-60vh lg:mt-32 lg:flex lg:items-center lg:justify-center "
+    class="hidden  md:hidden lg:w-screen lg:h-60vh lg:mt-60 lg:flex lg:items-center lg:justify-center "
   >
     <div
       class="relative lg:w-90vw lg:h-90vh flex justify-center align-text-top"
     >
       <div
-        class="rounded-lg bg-darkGreenish font-white lg:h-3/6 lg:w-full flex lg:p-28 justify-center"
+        class="rounded-lg bg-darkGreenish font-white lg:h-5/6 lg:w-full flex lg:p-28 justify-center"
       >
         <div
           class="text-box flex flex-col justify-between align-top justify-center flex-center"
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div
-        class=" flex flex-col md:flex md:flex-row lg:mt-96 lg:flex-row lg:justify-between lg:absolute justify-center card-box "
+        class=" flex flex-col md:flex md:flex-row lg:mt-96 lg:w-11/12	 lg:flex-row lg:justify-evenly lg:absolute justify-center card-box "
       >
         <Card
           class="text-white rounded-md myCard bg-sweetGreen"

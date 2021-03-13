@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full">
-    <div class="w-full h-full ">
+    <div class="w-full h-full">
       <div>
         <OptionMenu
           v-bind:key="index"
@@ -11,10 +11,10 @@
           v-bind:isActive="menuItem.isActive"
         />
       </div>
-      <div class="w-4/5 bg-darkGreenish flex flex-col rounded-lg">
-        <span class="pl-16 pt-10 text-greyish text-Barlow"> ORDER SUMMARY</span>
+      <div class=" lg:w-4/5 w-full  bg-darkGreenish flex flex-col rounded-lg">
+        <span class="pl-16 pt-10 text-greyish text-Barlow">ORDER SUMMARY</span>
         <span
-          class="pl-16 pb-4 text-white leading-10 pt-6 pr-16 font-black text-2xl text-Fraunces"
+          class="pl-16 pb-4 text-white md:leading-10 pt-6 pr-16 font-black text-xl md:text-2xl  text-Fraunces"
           >"I drink my coffee as
           <span class="text-sweetGreen">{{ getPreference }}</span> , with a
           <span class="text-sweetGreen">{{ getBeanType }}</span> type of bean.

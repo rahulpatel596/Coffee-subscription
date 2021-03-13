@@ -1,16 +1,30 @@
 <template>
-  <div class="flex w-80vw -ml-10vw justify-evenly pt-48">
-    <div class="">
+  <div
+    class="flex w-80vw -ml-10vw justify-center items-center   md:items-center flex-col md:flex-row lg:flex-row xl:flex-row md:justify-between pt-36"
+  >
+    <div class="flex items-center justify-center flex-col">
       <img
-        class="rounded-lg"
+        class="rounded-lg block  items-center md:hidden"
+        src="../../assets/assets/about/mobile/image-commitment.jpg"
+      />
+      <img
+        class="rounded-lg items-center  hidden md:block lg:hidden"
+        src="../../assets/assets/about/tablet/image-commitment.jpg"
+      />
+      <img
+        class="rounded-lg  hidden lg:block"
         src="../../assets/assets/about/desktop/image-commitment.jpg"
       />
     </div>
-    <div class="w-2/5 flex flex-col justify-center">
-      <span class="font-Fraunces font-black text-4xl pb-3 leading-13"
+    <div
+      class="mt-10 md:mt-0 w-2/4 flex flex-col w-90vw md:w-2/4 md:ml-10 justify-center items-center"
+    >
+      <span
+        class="font-Fraunces font-black text-3xl md:text-4xl lg:text-4xl xl:text-4xl items-center text-center md:text-left pb-3 md:leading-13 lg:leading-13 xl:leading-13"
         >Our commitment</span
       >
-      <span class="font-Barlow text-greyish leading-relaxed opacity-80"
+      <span
+        class=" self-center mt-6 font-Barlow text-greyish md:leading-relaxed  items-center text-center md:text-left lg:leading-relaxed xl:leading-relaxed opacity-80"
         >We’re built on a simple mission and a commitment to doing good along
         the way. We want to make it easy for you to discover and brew the
         world’s best coffee at home. It all starts at the source. To locate the

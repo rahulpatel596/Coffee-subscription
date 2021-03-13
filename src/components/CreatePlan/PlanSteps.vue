@@ -1,15 +1,21 @@
 <template>
   <div
-    class="flex flex-col rounded-lg h-80vh w-90vw -mt-5vw -ml-5vw justify-evenly bg-darkGreenish "
+    class="flex flex-col rounded-lg md:h-80vh md:p-10 w-90vw md:ml-0 md:w-screen -mt-5vw -ml-5vw justify-evenly bg-darkGreenish "
   >
-    <div class="pt-10 pl-32">
+    <div class="pt-10 md:pb-10 lg:pl-32 md:block">
       <img
-        class="pathIcon"
+        class="pathIcon hidden lg:block"
         src="../../assets/assets/home/desktop/svgpath.svg"
+      />
+      <img
+        class="md:block hidden lg:hidden"
+        src="../../assets/assets/plan/tablet/stepSVG.svg"
       />
     </div>
 
-    <div class="flex justify-evenly">
+    <div
+      class="flex md:self-left  lg:justify-evenly self-center h-full   flex-col md:flex-row"
+    >
       <StepCard
         v-bind:stepDescription="stepDescription1"
         v-bind:stepNumber="stepNumber1"

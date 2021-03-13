@@ -1,10 +1,10 @@
 <template>
-  <div class="about overflow-x-hidden">
+  <div class=" overflow-x-hidden">
     <ContentHeader />
     <OurCommitment />
     <Quality />
     <OurHeadquarters />
-    <Footer />
+    <Footer class="mt-20" />
   </div>
 </template>
 

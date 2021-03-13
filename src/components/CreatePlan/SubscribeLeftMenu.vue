@@ -1,5 +1,5 @@
 <template>
-  <div class="menu flex flex-col ">
+  <div class="menu flex flex-col hidden lg:flex">
     <ul class="w-full flex flex-col justify-evenly">
       <li class="" v-for="(menuItem, index) in menu" v-bind:key="index">
         <button

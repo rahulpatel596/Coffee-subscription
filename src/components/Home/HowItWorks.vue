@@ -1,36 +1,36 @@
 <template>
   <div
-    class="w-4/5 ml-12 mt-72 lg:mt-0 lg:h-60vh lg:flex lg:justify-center lg:items-center lg:w-screen"
+    class="w-4/5 ml-12 mt-72 lg:mt-0 lg:h-60vh lg:mt-80 lg:flex lg:justify-center  lg:w-screen"
   >
     <div
-      class="pb-6 md:flex md:justify-center md:items-center justify-center lg:w-4/5 flex flex-col lg:h-4/5 lg:justify-between"
+      class="pb-6 md:flex md:justify-center md:items-center justify-center lg:w-4/5 flex flex-col lg:h-4/5 lg:items-left lg:justify-between"
     >
       <span
-        class="pb-6 text-2xl font-black text-center lg:text-left lg:text-left xl:text-left"
+        class="pb-6 text-2xl font-black text-center lg:text-left lg:self-start xl:text-left"
         >How it works</span
       >
       <img
-        class="pathIcon pb-6 hidden lg:block lg:block xl:block"
+        class="pathIcon pb-6 hidden lg:block lg:self-start  xl:block"
         src="../../assets/assets/home/desktop/svgpath.svg"
       />
       <div class="items-left">
         <div
-          class="stepCard-box flex flex-col  lg:flex-row lg:flex-row xl:flex-row justify-between"
+          class="stepCard-box flex flex-col  lg:flex-row  xl:flex-row justify-between"
         >
           <StepCard
-            class="pb-10 lg:pb-0 lg:pb-0 xl:pb-0"
+            class="pb-10 lg:pb-0  xl:pb-0"
             v-bind:stepDescription="stepDescription1"
             v-bind:stepNumber="stepNumber1"
             v-bind:stepTitle="stepTitle1"
           />
           <StepCard
-            class="pb-10 lg:pb-0 lg:pb-0 xl:pb-0"
+            class="pb-10 lg:pb-0  xl:pb-0"
             v-bind:stepDescription="stepDescription2"
             v-bind:stepNumber="stepNumber2"
             v-bind:stepTitle="stepTitle2"
           />
           <StepCard
-            class="pb-10 lg:pb-0 lg:pb-0 xl:pb-0"
+            class="pb-10 lg:pb-0 xl:pb-0"
             v-bind:stepDescription="stepDescription3"
             v-bind:stepNumber="stepNumber3"
             v-bind:stepTitle="stepTitle3"
@@ -39,7 +39,7 @@
       </div>
 
       <button
-        class=" lg:cr-button md:mt-64 md:justify-center rounded-md text-white bg-sweetGreen h-16 bg-blueish ml-4   lg:ml-0 xl:ml-0 w-72 mt-10 lg:-mt-6 lg:-mt-6 xl:-mt-6 2xl:-mt-6"
+        class=" cr-button md:mt-64 md:justify-center rounded-md text-white bg-sweetGreen h-16 self-center sm:leading-1 lg:self-start lg:h-40 lg:items-left lg:leading-10 bg-blueish  xl:ml-0 w-72 mt-10 lg:-mt-6 xl:-mt-6 2xl:-mt-6"
       >
         Create your plan
       </button>
@@ -80,10 +80,6 @@ export default {
   }
   .stepCard-box {
     height: 400px;
-  }
-  .cr-button {
-    width: 217px;
-    height: 56px;
   }
 }
 </style>
