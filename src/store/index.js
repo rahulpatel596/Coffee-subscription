@@ -4,6 +4,7 @@ export const store = createStore({
   state() {
     return {
       currentMenuIndex: 0,
+      isNavOpen: false,
       menuLeft: [
         {
           number: "01",
@@ -151,6 +152,9 @@ export const store = createStore({
     };
   },
   mutations: {
+    setNavState(state) {
+      state.isNavOpen = !state.isNavOpen;
+    },
     setCurrentIndex(state, payload) {
       state.currentMenuIndex = payload.index;
     },
@@ -173,11 +177,11 @@ export const store = createStore({
   modules: {},
   getters: {
     getMenuLeft: (state) => state.menuLeft,
+    isNavOpen: (state) => state.isNavOpen,
     getMenuRight: (state) => state.menuRight,
     getCoffeePreference: (state) =>
       state.menuRight[0].options.filter((opt) => {
         if (opt.isSelected) {
-          console.log(opt.optionName);
           return opt.optionName;
         }
       }),

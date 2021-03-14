@@ -1,44 +1,42 @@
 <template>
-  <div
-    class="image-container lg:block flex justify-center items-center h-full w-screen relative md:justify-start"
-  >
-    <div
-      class="text-center lg:text-left  h-72 flex flex-col justify-between items-center lg:justify-between w-4/5 lg:pl-16 lg:w-32-8 lg:h-22-9 lg:-mt-8-37 lg:-ml-9-31 md:w-2/4 text-white absolute md:justify-between md:items-start md:ml-16"
-    >
-      <span
-        class="content-headline leading-10 lg:leading-12 text-4xl lg:text-7xl z-50 font-black md:self-start md:text-left"
+  <div>
+    <div class="w-90vw mt-8 -ml-5vw rounded-xl">
+      <div
+        class="w-2/3 lg:w-2/5 text-white lg:text-left md:flex ml-14 mt-12 flex items-center justify-center justify-between lg:flex xl:flex 2xl:flex flex-col  absolute"
       >
-        Great coffee made simple.
-      </span>
-      <span
-        class="content-subline w-3/4  font-Barlow leading-7 lg:leading-relaxed md:self-start md:text-left"
-      >
-        Start your mornings with the world’s best coffees. Try our expertly
-        curated artisan coffees from our best roasters delivered directly to
-        your door, at your schedule.
-      </span>
-      <button
-        type="button"
-        class="h-16 bg-blueish w-72 rounded-md lg:-ml-44 md:self-start"
-      >
-        Create your plan
-      </button>
-    </div>
-    <div
-      class="lg:w-90vw h-full  lg:-ml-5vw flex rounded-md items-center justify-center"
-    >
-      <img
-        class="rounded-md h-full block md:hidden lg:hidden xl:hidden 2xl:hidden w-4/5"
-        src="../../assets/assets/home/mobile/image-hero-coffeepress.jpg"
-      />
-      <img
-        class="hidden md:hidden lg:block lg:block xl:block"
-        src="../../assets/assets/home/desktop/image-hero-coffeepress.jpg"
-      />
-      <img
-        class="hidden md:block lg:hidden xl:hidden 2xl:hidden"
-        src="../../assets/assets/home/tablet/image-hero-coffeepress.jpg"
-      />
+        <span
+          class="leading-10 lg:leading-12 text-4xl lg:text-7xl z-40 font-black md:self-start md:text-left text-center"
+        >
+          Great coffee made simple.
+        </span>
+        <span
+          class="content-subline text-center w-4/5 pt-4 font-Barlow leading-7 lg:leading-relaxed md:self-start md:text-left"
+        >
+          Start your mornings with the world’s best coffees. Try our expertly
+          curated artisan coffees from our best roasters delivered directly to
+          your door, at your schedule.
+        </span>
+        <button
+          type="button"
+          class="md:h-16 bg-blueish md:w-72 h-10 w-44 rounded-md mt-10  md:self-start"
+        >
+          Create your plan
+        </button>
+      </div>
+      <div class="flex justify-center items-center">
+        <img
+          class="rounded-md h-full block md:hidden lg:hidden xl:hidden 2xl:hidden w-4/5"
+          src="../../assets/assets/home/mobile/image-hero-coffeepress.jpg"
+        />
+        <img
+          class="hidden md:hidden lg:block lg:block xl:block"
+          src="../../assets/assets/home/desktop/image-hero-coffeepress.jpg"
+        />
+        <img
+          class="hidden md:block lg:hidden xl:hidden 2xl:hidden"
+          src="../../assets/assets/home/tablet/image-hero-coffeepress.jpg"
+        />
+      </div>
     </div>
   </div>
 </template>

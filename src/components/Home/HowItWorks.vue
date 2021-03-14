@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-4/5 ml-12 mt-72 lg:mt-0 lg:h-60vh lg:mt-80 lg:flex lg:justify-center  lg:w-screen"
+    class="w-4/5 ml-12 lg:ml-0 md:ml-52 md:w-2/4 mt-72 lg:h-60vh lg:items-center lg:flex lg:justify-center lg:w-screen"
   >
     <div
       class="pb-6 md:flex md:justify-center md:items-center justify-center lg:w-4/5 flex flex-col lg:h-4/5 lg:items-left lg:justify-between"
@@ -13,9 +13,9 @@
         class="pathIcon pb-6 hidden lg:block lg:self-start  xl:block"
         src="../../assets/assets/home/desktop/svgpath.svg"
       />
-      <div class="items-left">
+      <div class="items-center">
         <div
-          class="stepCard-box flex flex-col  lg:flex-row  xl:flex-row justify-between"
+          class="stepCard-box flex flex-col lg:flex-row  xl:flex-row justify-between"
         >
           <StepCard
             class="pb-10 lg:pb-0  xl:pb-0"

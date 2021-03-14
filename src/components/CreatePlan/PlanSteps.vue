@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col rounded-lg md:h-80vh md:p-10 w-90vw md:ml-0 md:w-screen -mt-5vw -ml-5vw justify-evenly bg-darkGreenish "
+    class="flex flex-col rounded-lg md:h-80vh md:p-10 w-90vw md:ml-0 lg:w-90vw lg:-ml-5vw md:w-screen -mt-5vw -ml-5vw justify-evenly bg-darkGreenish "
   >
     <div class="pt-10 md:pb-10 lg:pl-32 md:block">
       <img
@@ -14,7 +14,7 @@
     </div>
 
     <div
-      class="flex md:self-left  lg:justify-evenly self-center h-full   flex-col md:flex-row"
+      class="flex md:self-left  lg:justify-evenly self-center h-full lg:h-2/4 lg:ml-32 flex-col md:flex-row"
     >
       <StepCard
         v-bind:stepDescription="stepDescription1"

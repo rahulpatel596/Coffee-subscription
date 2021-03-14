@@ -23,7 +23,7 @@
         >
       </div>
       <div
-        class="order-1 -ml-30 md:-mt-60 -mt-36 w-3/4 lg:mr-24 lg:h-5/6 lg:w-5/12  self-center lg:order-2"
+        class="order-1 -ml-30 md:-mt-60 -mt-28 w-3/4 lg:mr-24 lg:h-5/6 lg:w-5/12  self-center lg:order-2"
       >
         <img
           loading="lazy"

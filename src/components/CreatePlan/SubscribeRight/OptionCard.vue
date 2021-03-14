@@ -9,7 +9,7 @@
     >
       <button
         v-on:click="setIsSelected(index, ind)"
-        class="rounded-lg h-full w-11/12 mb-6 flex flex-col md:justify-evenly lg:hover:bg-skin lg:hover:text-black"
+        class="rounded-lg justify-center md:pt-0 h-32 md:h-full w-11/12  mb-6 flex flex-col md:justify-evenly lg:hover:bg-skin lg:hover:text-black"
         v-bind:class="[option.isSelected ? 'bg-sweetGreen' : 'bg-dull']"
       >
         <span

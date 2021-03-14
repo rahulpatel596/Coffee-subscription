@@ -7,7 +7,7 @@
         <span class="">our collections</span>
       </div>
       <div
-        class="flex flex-col block md:flex-row lg:flex-row z-50 justify-center items-center lg:w-4/5"
+        class="flex flex-col block md:flex-row lg:flex-row z-40 justify-center items-center lg:w-4/5"
       >
         <Product
           v-for="(product, index) in products"

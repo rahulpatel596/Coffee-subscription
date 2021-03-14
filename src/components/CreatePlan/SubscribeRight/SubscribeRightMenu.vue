@@ -12,9 +12,11 @@
         />
       </div>
       <div class=" lg:w-4/5 w-full  bg-darkGreenish flex flex-col rounded-lg">
-        <span class="pl-16 pt-10 text-greyish text-Barlow">ORDER SUMMARY</span>
+        <span class="md:pl-16 pt-10 pl-4 text-greyish text-Barlow"
+          >ORDER SUMMARY</span
+        >
         <span
-          class="pl-16 pb-4 text-white md:leading-10 pt-6 pr-16 font-black text-xl md:text-2xl  text-Fraunces"
+          class="pl-4 md:pl-16  md:pb-4 text-white md:leading-10 pt-4 pr-4 pb-4 md:pt-6 md:pr-16 font-black text-xl md:text-2xl  text-Fraunces"
           >"I drink my coffee as
           <span class="text-sweetGreen">{{ getPreference }}</span> , with a
           <span class="text-sweetGreen">{{ getBeanType }}</span> type of bean.
@@ -24,9 +26,9 @@
           >."</span
         >
       </div>
-      <div class="flex w-4/5 justify-end">
+      <div class="flex lg:self-start mb-10 md:justify-end">
         <button
-          class="cr-button mt-6 flex-3 rounded-md text-white bg-sweetGreen"
+          class="mt-6 h-16 flex-3 w-2/3 md:w-1/3 lg:self-start rounded-md text-white bg-sweetGreen"
         >
           Create your plan
         </button>
