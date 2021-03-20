@@ -39,7 +39,7 @@
       </div>
 
       <button
-        class=" cr-button md:mt-64 md:justify-center rounded-md text-white bg-sweetGreen h-16 self-center sm:leading-1 lg:self-start lg:h-40 lg:items-left lg:leading-10 bg-blueish  xl:ml-0 w-72 mt-10 lg:-mt-6 xl:-mt-6 2xl:-mt-6"
+        class=" cr-button md:mt-64 md:justify-center rounded-md text-white bg-sweetGreen h-16 self-center sm:leading-1 lg:self-start lg:h-48 lg:items-left lg:leading-10 bg-blueish  xl:ml-0 w-72 mt-10 lg:mt-4"
       >
         Create your plan
       </button>

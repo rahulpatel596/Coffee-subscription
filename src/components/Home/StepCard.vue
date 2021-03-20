@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" lg:stepCard-cont flex flex-col text-center lg:text-left lg:text-left xl:text-left"
+    class="lg:stepCard-cont flex flex-col justify-around text-center lg:text-left lg:text-left xl:text-left"
   >
     <span class="text-7xl text-darkCream stepnumber">{{ stepNumber }}</span>
     <span

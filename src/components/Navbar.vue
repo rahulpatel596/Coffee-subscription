@@ -1,12 +1,12 @@
 <template>
   <div class="navbar-container w-90vw -ml-5vw text-3 h-28 flex items-center">
-    <div class="logo-container flex ">
+    <div class="logo-container flex">
       <router-link to="/"
         ><img src="../assets/assets/shared/desktop/logo.svg"
       /></router-link>
     </div>
     <div
-      class="nav-items font-Barlow justify-end justify-around hidden md:block"
+      class="nav-items flex-1 font-Barlow  self-center justify-center justify-evenly items-center hidden md:flex"
     >
       <router-link to="/">HOME</router-link>
       <router-link to="/about">ABOUT</router-link>
@@ -68,10 +68,6 @@ export default {
 }
 
 .nav-items {
-  width: 283px;
   font-size: 12px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 </style>

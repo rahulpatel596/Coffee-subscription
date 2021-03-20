@@ -3,7 +3,10 @@
     <ul class="w-full flex flex-col justify-evenly">
       <li class="" v-for="(menuItem, index) in menu" v-bind:key="index">
         <button
-          v-on:click="setCurrent(index)"
+          v-on:click="
+            setCurrent(index);
+            setIsActive(index);
+          "
           class="focus:outline-none flex space-x-10 font-black pl-2 pb-2 pt-2"
         >
           <span
@@ -32,6 +35,12 @@ export default {
     setCurrent(index) {
       this.$store.commit({
         type: "setCurrentIndex",
+        index: index,
+      });
+    },
+    setIsActive(index) {
+      this.$store.commit({
+        type: "setIsActive",
         index: index,
       });
     },
