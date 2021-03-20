@@ -1,4 +1,4 @@
-# restro2
+# Coffee subscription website using Vue.js
 
 ## Project setup
 ```
