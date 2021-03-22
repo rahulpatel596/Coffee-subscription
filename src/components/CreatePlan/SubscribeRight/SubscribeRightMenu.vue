@@ -28,6 +28,7 @@
       </div>
       <div class="flex lg:self-start mb-10 md:justify-end">
         <button
+          v-on:click="setModalState"
           class="mt-6 h-16 flex-3 w-2/3 md:w-1/3 lg:self-start rounded-md text-white bg-sweetGreen"
         >
           Create your plan
@@ -63,6 +64,11 @@ export default {
     },
   },
   methods: {
+    setModalState() {
+      this.$store.commit({
+        type: "setModalState",
+      });
+    },
     coffeePreference() {
       let preference = "______";
       if (this.$store.getters.getMenuRight[0]) {

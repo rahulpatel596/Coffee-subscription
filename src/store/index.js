@@ -5,6 +5,7 @@ export const store = createStore({
     return {
       currentMenuIndex: 0,
       isNavOpen: false,
+      isModalOpen: false,
       menuLeft: [
         {
           number: "01",
@@ -155,6 +156,9 @@ export const store = createStore({
     setNavState(state) {
       state.isNavOpen = !state.isNavOpen;
     },
+    setModalState(state) {
+      state.isModalOpen = !state.isModalOpen;
+    },
     setCurrentIndex(state, payload) {
       state.currentMenuIndex = payload.index;
     },
@@ -177,6 +181,9 @@ export const store = createStore({
   modules: {},
   getters: {
     getMenuLeft: (state) => state.menuLeft,
+    getModalState: (state) => {
+      return state.isModalOpen;
+    },
     isNavOpen: (state) => state.isNavOpen,
     getMenuRight: (state) => state.menuRight,
     getCoffeePreference: (state) =>
