@@ -4,7 +4,7 @@
     <Collection />
     <Reason />
     <HowItWorks />
-    <Footer class="lg:mt-36" />
+    <Footer class="lg:mt-44" />
   </div>
 </template>
 
