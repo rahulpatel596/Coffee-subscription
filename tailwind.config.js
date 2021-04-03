@@ -38,6 +38,7 @@ module.exports = {
         "-10vw": "10vw",
         "-20vh": "20vh",
         "-10vh": "10vh",
+        "-15vw": "15vw",
       },
       fontFamily: {
         Barlow: "Barlow",

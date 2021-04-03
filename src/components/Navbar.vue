@@ -1,9 +1,16 @@
 <template>
   <div class="navbar-container w-90vw -ml-5vw text-3 h-28 flex items-center">
-    <div class="logo-container flex">
-      <router-link to="/"
-        ><img src="../assets/assets/shared/desktop/logo.svg"
-      /></router-link>
+    <div class="w-70vw logo-container flex">
+      <router-link class="" to="/">
+        <img
+          class="hidden md:block"
+          src="../assets/assets/shared/desktop/logo.svg"
+        />
+        <img
+          class="md:hidden h-full w-full"
+          src="../assets/assets/shared/mobile/mobile-logo.svg"
+        />
+      </router-link>
     </div>
     <div
       class="nav-items flex-1 font-Barlow  self-center justify-center justify-evenly items-center hidden md:flex"
@@ -12,7 +19,7 @@
       <router-link to="/about">ABOUT</router-link>
       <router-link to="/createYourPlan">CREATE YOUR PLAN</router-link>
     </div>
-    <button class="ml-72 md:hidden" v-on:click="setNavState">
+    <button class=" md:hidden" v-on:click="setNavState">
       <img
         v-bind:class="[isNavOpen ? 'hidden' : 'block']"
         src="../assets/assets/shared/mobile/icon-hamburger.svg"

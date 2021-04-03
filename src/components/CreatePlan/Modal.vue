@@ -4,44 +4,43 @@
     v-bind:class="[this.$store.getters.getModalState ? 'block' : 'hidden']"
   >
     <div
-      class="modal-content h-3/5 w-4/5 rounded-xl md:w-4/5 lg:h-3/4 lg:w-3/5 lg:h-3/5 xl:w-1/3 xl:h-2/4 flex flex-col lg:justify-center"
+      class="modal-content justify-between md:justify-between lg:justify-between h-4/5 md:h-4/5 lg:h-4/5 pb-4 w-4/5 rounded-xl md:w-/5  lg:w-2/5 xl:h-3/4 flex flex-col lg:flex"
     >
-      <div name="head" class="h-1/5 w-full bg-darkGreenish flex items-center">
-        <span
-          class="lg:ml-16 ml-6 md:ml-10 text-white font-black text-2xl lg:text-4xl"
-        >
-          Order Summary
-        </span>
-      </div>
       <div
-        class="px-6 mt-12 md:px-10  md:text-2xl lg:h-2/4 font-black lg:text-2xl lg:mt-10 lg:px-16 lg:leading-10"
+        name="head"
+        class="h-1/5 rounded-t-xl w-full bg-darkGreenish flex items-center text-white font-black text-2xl md:text-3xl lg:text-4xl pl-4 md:pl-6 lg:pl-10 xl:pl-16"
       >
-        <span class="lg:leading-10 md:leading-10">
+        Order Summary
+      </div>
+      <div class="flex justify-between flex-col">
+        <div
+          class="px-6 md:px-10 text-xl  md:text-2xl lg:h-2/4 font-black lg:text-2xl  lg:px-16 lg:leading-10 md:leading-10"
+        >
           “I drink my coffee as
           <span class="text-sweetGreen">{{ getPreference }}</span
           >, with a <span class="text-sweetGreen">{{ getBeanType }}</span> type
           of bean. <span class="text-sweetGreen">{{ getQuantity }}</span> ground
           ala <span class="text-sweetGreen">{{ getGrindOption }}</span
           >, sent to me <span class="text-sweetGreen">{{ getDeliveries }}</span
-          >.”</span
+          >.”
+        </div>
+        <div
+          class="mt-6 px-6 md:px-10 text-sm lg:text-xl  lg:px-16 text-greyish"
         >
+          Is this correct? You can proceed to checkout or go back to plan
+          selection if something is off. Subscription discount codes can also be
+          redeemed at the checkout.
+        </div>
       </div>
-      <div
-        class="mt-12 px-6 md:px-10 md:mt-12 lg:text-xl lg:h-1/4 lg:-mt-14 lg:px-16 text-greyish"
-      >
-        Is this correct? You can proceed to checkout or go back to plan
-        selection if something is off. Subscription discount codes can also be
-        redeemed at the checkout.
-      </div>
-      <div name="footer" class="px-6 md:px-10 lg:px-12">
+      <div name="footer" class="px-6 md:px-10  lg:px-12">
         <!-- Tablet, Desktop Footer-->
-        <div class="hidden lg:flex lg:flex-row lg:p-4 md:mt-12">
+        <div class="hidden lg:flex lg:flex-row lg:p-4">
           <div class="w-2/4 text-3xl text-center align-middle">
             $14.99 / mo
           </div>
 
           <button
-            class="lg:h-16 lg:w-2/4 rounded-lg text-white bg-sweetGreen"
+            class=" lg:w-2/4 rounded-lg text-white bg-sweetGreen"
             v-on:click="setModalState"
           >
             Checkout
@@ -50,7 +49,7 @@
         <!-- Mobile footer -->
         <button
           v-on:click="setModalState"
-          class="h-12 mt-12 xs:mt-2 md:mt-10 w-full text-white rounded-lg bg-sweetGreen block lg:hidden"
+          class="h-12 w-full text-white rounded-lg bg-sweetGreen block lg:hidden"
         >
           $14.99 Checkout
         </button>
@@ -155,7 +154,7 @@ export default {
 }
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 5% auto; /* 15% from the top and centered */
 
   border: 1px solid #888;
 }
