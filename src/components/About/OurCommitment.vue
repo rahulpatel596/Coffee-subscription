@@ -17,10 +17,10 @@
       />
     </div>
     <div
-      class="mt-10 md:mt-0 w-2/4 flex flex-col w-90vw md:w-2/4 md:ml-10 justify-center items-center"
+      class="mt-10 md:mt-0 w-2/4 flex flex-col w-90vw md:w-2/4 md:ml-10 justify-center items-center md:items-start"
     >
       <span
-        class="font-Fraunces font-black text-3xl md:text-4xl lg:text-4xl xl:text-4xl items-center text-center md:text-left pb-3 md:leading-13 lg:leading-13 xl:leading-13"
+        class="font-Fraunces font-black text-3xl md:text-4xl lg:text-4xl lg:text-left xl:text-4xl items-center text-center md:text-left pb-3 md:leading-13 lg:leading-13 xl:leading-13"
         >Our commitment</span
       >
       <span

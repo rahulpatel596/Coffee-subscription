@@ -2,7 +2,7 @@
   <div>
     <div class="w-90vw mt-8 -ml-5vw rounded-xl">
       <div
-        class="w-70vw lg:ml-16 -ml-15vw lg:w-3/5 text-white lg:text-left md:flex  mt-16 md:mt-28 flex items-center justify-center justify-between lg:flex xl:flex 2xl:flex flex-col  absolute"
+        class="w-70vw lg:-ml-15vw -ml-15vw lg:w-2/5 text-white lg:text-left md:flex  mt-16 md:mt-28 flex items-center justify-center justify-between lg:flex xl:flex 2xl:flex flex-col  absolute"
       >
         <span
           class="leading-10 lg:leading-12 text-4xl lg:text-7xl z-40 font-black md:self-start md:text-left"
